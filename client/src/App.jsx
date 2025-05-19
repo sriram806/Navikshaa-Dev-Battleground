@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const API = 'http://localhost:5000';
+const API = 'http://localhost:5000' || 'https://schedulepro-rphx.onrender.com';
 
 function App() {
   const [slots, setSlots] = useState([]);

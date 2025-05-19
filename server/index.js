@@ -10,7 +10,8 @@ app.use(express.json());
 app.use(cors({
     origin: (origin, callback) => {
         const allowedOrigins = [
-            'http://localhost:5173'
+            'http://localhost:5173',
+            'https://schedulo-79bw.onrender.com',
         ];
         if (!origin || allowedOrigins.includes(origin)) {
             callback(null, true);

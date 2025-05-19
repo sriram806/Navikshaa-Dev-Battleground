@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const API = 'https://schedulepro-rphx.onrender.com'; // http://localhost:5173/
+const API = 'http://localhost:5000';
 
 function App() {
   const [slots, setSlots] = useState([]);
@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 p-6">
       <div className="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-6">
-        <h1 className="text-3xl font-bold text-center mb-6 text-blue-700">Schedulo Lite Smart Session Booking MVP</h1>
+        <h1 className="text-3xl font-bold text-center mb-6 text-blue-700">Schedulo Lite</h1>
         <div className="mb-6">
           <label className="block mb-2 text-gray-700 font-medium">Your Name</label>
           <input
